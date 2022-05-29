@@ -15,9 +15,9 @@
             <Entry Text="{Binding Status}" FontSize="Medium" />
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Save" Command="{Binding ListVieModel.SaveTaskCommand}" CommandParameter="{Binding}"/>
-            <Button Text="Delete" Command="{Binding ListVieModel.DeleteTaskCommand}" CommandParameter="{Binding}" />
-            <Button Text="Back" Command="{Binding ListVieModel.BackCommand}" />
+            <Button Text="Save" Command="{Binding ListViewModel.SaveTaskCommand}" CommandParameter="{Binding}"/>
+            <Button Text="Delete" Command="{Binding ListViewModel.DeleteTaskCommand}" CommandParameter="{Binding}" />
+            <Button Text="Back" Command="{Binding ListViewModel.BackCommand}" />
         </StackLayout>
     </StackLayout>
 
