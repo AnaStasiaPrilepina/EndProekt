@@ -77,6 +77,15 @@ namespace EndProekt.ViewModels
             }
         }
 
+        public bool IsValid
+        {
+            get
+            {
+                return ((!string.IsNullOrEmpty(Name.Trim()))) || ((!string.IsNullOrEmpty(Description.Trim()))) 
+                    || ((!string.IsNullOrEmpty(Who.Trim()))) || ((!string.IsNullOrEmpty(Status.Trim())));
+            }
+        }
+
         public void OnPropertyChanged(string propName)
         {
             if (PropertyChanged != null)

@@ -15,7 +15,7 @@ namespace EndProekt
             InitializeComponent();
             profileImage.Source = ImageSource.FromFile("koala.jpg");
             aboutList.ItemsSource = GetMenuList();
-            var homePage = typeof(Views.HomePage);
+            var homePage = typeof(Views.TaskPage);
             Detail = new NavigationPage((Page)Activator.CreateInstance(homePage));
             IsPresented = false;
         }

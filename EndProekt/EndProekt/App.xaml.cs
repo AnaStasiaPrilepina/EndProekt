@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using EndProekt.Views;
 
 namespace EndProekt
 {
@@ -12,8 +11,6 @@ namespace EndProekt
             InitializeComponent();
 
             MainPage = new MainPage();
-
-            //MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()
