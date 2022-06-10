@@ -5,11 +5,11 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" Margin="20">
             <Image x:Name="profileImage"></Image>
-            <Label Text="Tasks for the day" Font="20" TextColor="Blue" HorizontalTextAlignment="Center"></Label>
-            <Label Text="As default you will see the whole list of tasks" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-            <Label Text="Button 'Add' will open a special form" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-            <Label Text="On special form there are 3 buttons:" TextColor="ForestGreen" HorizontalTextAlignment="Center"></Label>
-            <Label Text="Save - Delete - Cancel" TextColor="ForestGreen" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Tasks for the day" Font="30" TextColor="Blue" HorizontalTextAlignment="Center" VerticalOptions="Start"></Label>
+            <Label Text="As default you will see the list of tasks." Font="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Button 'Add' will open a special form." Font="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="On special form there are 3 buttons: Save - Delete - Cancel" Font="20" TextColor="ForestGreen" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"></Label>
+            <Image Source="info.jpg" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

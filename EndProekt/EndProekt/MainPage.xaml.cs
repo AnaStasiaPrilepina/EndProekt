@@ -25,6 +25,13 @@ namespace EndProekt
             var list = new List<MasterMenuItems>();
             list.Add(new MasterMenuItems()
             {
+                Text = "Hoomepage",
+                Detail = "Programm description",
+                ImagePath = "info.jpg",
+                TargetPage = typeof(Views.TaskPage)
+            });
+            list.Add(new MasterMenuItems()
+            {
                 Text = "Monday",
                 Detail = "Esmaspäev",
                 ImagePath = "mon.jpg",

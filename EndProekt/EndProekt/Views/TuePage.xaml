@@ -8,7 +8,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Name}" FontSize="Medium"/>
                                 <Label Text="{Binding Status}" FontSize="Medium"/>
                             </StackLayout>
