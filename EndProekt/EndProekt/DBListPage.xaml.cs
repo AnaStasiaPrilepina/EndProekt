@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EndProekt.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +7,17 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using EndProekt.ViewModels;
 using Task = EndProekt.Models.Task;
 
-namespace EndProekt.Views
+namespace EndProekt
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SatPage : ContentPage
+    public partial class DBListPage : ContentPage
     {
-        public SatPage()
+        public DBListPage()
         {
             InitializeComponent();
-            //BindingContext = new TasksListViewModel() { Navigation = this.Navigation };
         }
-
         protected override void OnAppearing()
         {
             tasksList.ItemsSource = App.Database.GetItems();

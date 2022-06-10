@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EndProekt.DBTaskPage">
+    <StackLayout>
+        <Label Text="Name" />
+        <Entry Text="{Binding Name}" FontSize="Medium" />
+        <Label Text="Description" />
+        <Entry Text="{Binding Description}" FontSize="Medium" />
+        <Label Text="Who" />
+        <Entry Text="{Binding Who}" FontSize="Medium" />
+        <Label Text="Status" />
+        <Entry Text="{Binding Status}" FontSize="Medium" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Save" Clicked="SaveTask" />
+            <Button Text="Delete" Clicked="DeleteTask" />
+            <Button Text="Cancel" Clicked="Cancel" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

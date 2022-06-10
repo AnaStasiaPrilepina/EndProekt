@@ -6,7 +6,10 @@
         <StackLayout HorizontalOptions="Center" Margin="20">
             <Image x:Name="profileImage"></Image>
             <Label Text="Tasks for the day" Font="20" TextColor="Blue" HorizontalTextAlignment="Center"></Label>
-            <Label Text="Buttons: Add task - Delete Task - Ready / In progress / Not ok" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            <Label Text="As default you will see the whole list of tasks" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Button 'Add' will open a special form" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            <Label Text="On special form there are 3 buttons:" TextColor="ForestGreen" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Save - Delete - Cancel" TextColor="ForestGreen" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EndProekt.Views.FriPage">
+             x:Class="EndProekt.DBListPage">
     <StackLayout>
         <ListView x:Name="tasksList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Name}" FontSize="Medium"/>
-                                <Label Text="{Binding Status}" FontSize="Medium"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

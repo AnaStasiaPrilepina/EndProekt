@@ -2,32 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EndProekt.Views.TuePage">
-
     <StackLayout>
-        <Button Text="Add" Command="{Binding CreateTaskCommand}" />
-        <ListView x:Name="booksList" ItemsSource="{Binding Tasks}" SelectedItem="{Binding SelectedTask, Mode=TwoWay}" HasUnevenRows="True">
+        <ListView x:Name="tasksList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Name}" FontSize="Medium" />
-                                <Label Text="{Binding Description}" FontSize="Small" />
-                                <Label Text="{Binding Who}" FontSize="Small" />
-                                <Label Text="{Binding Status}" FontSize="Small" />
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}" FontSize="Medium"/>
+                                <Label Text="{Binding Status}" FontSize="Medium"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Text="Add" Clicked="CreateTask"/>
     </StackLayout>
-
-    <!--<ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" Margin="20">
-            <Image x:Name="profileImage"></Image>
-            <Label Text="Tasks for the Tuesday" Font="20" TextColor="Blue" HorizontalTextAlignment="Center"></Label>
-            <Label Text="Buttons: Add task - Delete Task - Ready / In progress / Not ok" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-        </StackLayout>
-    </ContentPage.Content>-->
 </ContentPage>
